@@ -8,18 +8,19 @@ app_license = "gpl-3.0"
 # Apps
 # ------------------
 
-# required_apps = []
+required_apps = ["erpnext"]
 
-# Each item in the list will be shown as an app in the apps page
-# add_to_apps_screen = [
-# 	{
-# 		"name": "croatia_app",
-# 		"logo": "/assets/croatia_app/logo.png",
-# 		"title": "računovodstvo Hrvatska",
-# 		"route": "/croatia_app",
-# 		"has_permission": "croatia_app.api.permission.has_app_permission"
-# 	}
-# ]
+# Translation
+# ------------------
+translations = [
+    {
+        "source_name": "croatia_app/translations/hr.po",
+        "target_name": "croatia_app/translations/hr-target.po"
+    }
+]
+
+# After install
+after_install = "croatia_app.translations.setup_translations"
 
 # Includes in <head>
 # ------------------
@@ -236,4 +237,3 @@ app_license = "gpl-3.0"
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
-

@@ -1,0 +1,3 @@
+# frappe -- Installed by bench
+# erpnext -- Installed by bench
+polib>=1.2.0
